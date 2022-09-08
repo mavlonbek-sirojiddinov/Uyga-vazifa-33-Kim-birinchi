@@ -5,7 +5,7 @@ const elVelikResult = document.querySelector(".velik-hour");
 const elMoshinaResult = document.querySelector(".moshina-hour");
 const elAirResult = document.querySelector(".air-hour");
 
-elSiteInput.addEventListener("click", e=> {
+elSiteInput.addEventListener("keyup", e=> {
   var inputValue = e.target.value;
 
   elOnFootResult.textContent = ((inputValue / 3) * 10).toFixed(1)
